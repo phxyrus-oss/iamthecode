@@ -1,0 +1,184 @@
+body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #b30000, #d60000);
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* HEADER SECTIONS */
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* CENTER IMAGE PERFECTLY CENTERED */
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* HEADER IMAGES */
+.header-img {
+  height: 70px;
+  object-fit: contain;
+}
+
+.center-img {
+  height: 100px;
+}
+
+/* RIGHT ICON GROUP */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* HOME & PROFILE ICONS */
+.home-icon,
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home-icon:hover,
+.profile-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg, #b30000, #d60000);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .header-center {
+    display: none;
+  }
+}
+
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    .section-default {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: #fdfdfd;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      border-top: 8px solid #b30000;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      color: #b30000;
+      margin-top: 0;
+      font-size: 28px;
+      border-left: 6px solid #b30000;
+      padding-left: 12px;
+    }
+
+    .text-content p {
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .chart-box {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #b30000, #d60000);
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 80px;
+      font-size: 0.95em;
+    }
+
+    .references {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* GRID LAYOUT FOR 2X2 SECTIONS */
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Inside grid, make sections stacked vertically instead of flex */
+    .grid-section section {
+      display: block;
+      background: #fdfdfd;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      border-top: 8px solid #b30000;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-section {
+        grid-template-columns: 1fr;
+      }
+      .grid-section section {
+        text-align: center;
+      }
+      .text-content h2 {
+        border-left: none;
+      }
+    }
+    /* Footer */
+footer {
+  background: linear-gradient(90deg, #b30000, #d60000);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}

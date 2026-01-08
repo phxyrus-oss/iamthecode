@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quality Education Issue | UN SDG 4</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Chart.js (for graphs) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="UN.css" />
+</head>
+
+<body>
+
+<!-- HEADER (red gradient, logos, and icons) -->
+<header>
+  <!-- LEFT IMAGE -->
+  <div class="header-left">
+    <img src="culiat_logo-removebg-preview.png" alt="Left Logo" class="header-img">
+  </div>
+
+  <!-- CENTER IMAGE -->
+  <div class="header-center">
+    <img src="iamtheCODE-logo-removebg-preview.png" alt="Center Logo" class="header-img center-img">
+  </div>
+
+  <!-- RIGHT ICONS -->
+  <div class="header-right">
+  <!-- Home Button -->
+  <a href="index.html">
+    <img src="home-removebg-preview.png" class="home-icon" alt="Home">
+  </a>
+
+    <a href="website.html">
+      <img src="person-removebg-preview.png" class="profile-icon" alt="Profile">
+    </a>
+  </div>
+</header>
+
+<!-- PAGE TITLE BELOW HEADER (centered with red bar) -->
+<div style="max-width:1200px; margin:40px auto; text-align:center;">
+  <h1 style="
+      display: inline-block;
+      color:#b30000;
+      border-left: 8px solid #b30000;
+      padding-left: 16px;
+      font-size:36px;
+      margin:0;
+      line-height:1.2;
+  ">
+   Quality Education Issue
+  </h1>
+</div>
+
+<!-- STUDENT LITERACY SECTION -->
+<section class="section-default">
+  <div class="text-content">
+    <h2>Global Literacy Among Students</h2>
+    <p>
+      According to United Nations and UNESCO data, millions of children and adolescents worldwide
+      are not achieving basic literacy skills. Approximately <strong>617 million students</strong>
+      do not reach minimum proficiency in reading and mathematics. This includes around <strong>387 million primary school-age children</strong>
+      and <strong>230 million adolescents of lower secondary school age</strong>.
+    </p>
+    <p>
+      This indicates a serious global learning crisis: being enrolled in school does not guarantee
+      students are learning the foundational skills needed for future success.
+    </p>
+    <p style="font-size:14px; color:#666;">
+  Source: United Nations & UNESCO – <a href="https://www.un.org/sustainabledevelopment/blog/2017/09/more-than-half-of-children-and-youth-worldwide-not-learning-unesco/" target="_blank" style="color:#b30000;">More than half of children and youth worldwide not learning – UNESCO report</a>
+</p>
+
+  </div>
+
+  <div class="chart-box">
+    <canvas id="literacyChart"></canvas>
+  </div>
+</section>
+
+<!-- 2X2 GRID FOR FOUR SECTIONS -->
+<div class="grid-section">
+
+  <!-- DIGITAL DIVIDE SECTION -->
+  <section>
+    <div class="text-content">
+  <h2>The Digital Divide in Education</h2>
+  <p>
+ Millions of learners worldwide still lack access to home computers, tablets, or reliable internet connections. 
+    This digital divide creates significant barriers to education, limiting students’ ability to participate in 
+    distance learning, access online resources, and develop essential digital literacy skills. The gap is especially 
+    pronounced in low-income countries, rural areas, and communities affected by socio-economic disadvantage. 
+    As education increasingly relies on digital tools, addressing this divide is critical to ensuring equitable 
+    learning opportunities and achieving the goals of SDG 4.  </p>
+  <p style="font-size:14px; color:#666;">
+    Source: UNESCO – <a href="https://www.unesco.org/en/articles/startling-digital-divides-distance-learning-emerge" target="_blank" style="color:#b30000;">Startling digital divides in distance learning emerge</a>
+  </p>
+</div>
+
+
+    <div class="chart-box">
+      <img src="digital divide.jpg" alt="Digital divide and access to education" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  </section>
+ 
+  <!-- out of school youth-->
+   <section>
+  <div class="text-content">
+  <h2>Out‑of‑School Children and Youth</h2>
+  <p>
+    Despite decades of progress in expanding access to education, hundreds of millions of children and
+    adolescents remain out of school. According to the UNESCO Global Education Monitoring Report,
+    approximately <strong>251 million children and youth</strong> worldwide were not enrolled in school,
+    with the highest rates in low‑income regions and areas affected by conflict and poverty. This
+    persistent exclusion from education highlights ongoing barriers to achieving universal quality
+    education under SDG 4.
+  </p>
+<p style="font-size:14px; color:#666;">
+    Source: UNESCO Global Education Monitoring Report – <a href="https://www.unesco.org/en/articles/251m-children-and-youth-still-out-school-despite-decades-progress-unesco-report" target="_blank" style="color:#b30000;">251 million children and youth still out of school worldwide</a>
+  </p>
+    <div class="chart-box">
+      <img src="out of school.jpg" alt="Out-of-school children worldwide" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  </section>
+
+  <!--gender equality-->
+  <section>
+    <div class="text-content">
+  <h2>Girls and Gender Inequality in Education</h2>
+  <p>
+    Gender inequality continues to be one of the most persistent barriers to achieving <strong>quality education for all</strong>. 
+    Globally, nearly two-thirds of all illiterate adults are women, highlighting the ongoing disparities in access to education 
+    between girls and boys. Socio-economic barriers, cultural norms, and limited opportunities in disadvantaged regions prevent 
+    many girls from enrolling in school, completing their education, or developing essential literacy and numeracy skills. 
+    Additionally, girls often face higher dropout rates due to early marriage, household responsibilities, or lack of safe and 
+    inclusive learning environments, further reinforcing the gender gap in education.
+  </p>
+  <p style="font-size:14px; color:#666;">
+    Source: UNESCO – <a href="https://www.unesco.org/en/gender-equality/education/need-know" target="_blank" style="color:#b30000;">Advancing education and gender equality in and through education</a>
+  </p>
+</div>
+
+  <div class="chart-box">
+      <img src="gender education.jpg" alt="Girls' access to education" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  </section>
+
+  <!-- LEARNING CRISIS STUDENTS SECTION -->
+  <section>
+    <div class="text-content">
+  <h2>Learning Crisis Among Students</h2>
+  <p>
+    According to United Nations and UNESCO data, an estimated <strong>617 million children and adolescents worldwide</strong>
+    do not achieve minimum proficiency in reading and mathematics. This includes approximately
+    <strong>387 million primary school-age children</strong> and <strong>230 million adolescents of lower secondary age</strong>.
+  </p>
+  <p>
+    Most of these students are enrolled in school, which highlights that simply attending school
+    does not guarantee learning. Addressing this learning crisis is critical to improving
+    the quality of education globally.
+  </p>
+  <p style="font-size:14px; color:#666;">
+    Source: United Nations & UNESCO – <a href="https://www.un.org/sustainabledevelopment/blog/2017/09/more-than-half-of-children-and-youth-worldwide-not-learning-unesco/" target="_blank" style="color:#b30000;">More than half of children and youth worldwide not learning – UNESCO report</a>
+  </p>
+</div>
+
+
+    <div class="chart-box">
+      <img src="learning crisis.jpg" alt="Students not achieving minimum proficiency" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  </section>
+
+</div>
+
+<!-- RED BREAK LINE -->
+<div style="max-width:1200px; margin:60px auto 20px auto; text-align:center;">
+  <hr style="border: 0; border-top: 2px solid #b30000; margin-bottom: 20px;">
+  
+  <br>
+  <!-- HOW iamtheCODE RESOLVES THESE ISSUES HEADER -->
+  <h1 style="
+      display: inline-block;
+      color:#b30000;
+      border-left: 8px solid #b30000;
+      padding-left: 16px;
+      font-size:36px;
+      margin:0;
+      line-height:1.2;
+  ">
+    How iamtheCODE Resolves These Issues
+  </h1>
+</div>
+
+<!-- IAMTHECODE SOLUTION CARD -->
+<section class="section-default" style="flex-direction:column; align-items:center; text-align:center;">
+
+  <!-- CARD IMAGE -->
+  <div style="width:100%; max-width:800px; margin-bottom:25px;">
+    <img src="code 0.jpg" alt="iamtheCODE empowering learners"
+         style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+  </div>
+
+  <!-- CARD TEXT -->
+  <div style="max-width:900px;">
+    <p style="font-size:17px; line-height:1.8;">
+      IamtheCODE club responds to global education challenges by equipping learners with practical digital and coding skills through inclusive and supportive learning environments. Through community-based programs, collaborative activities, and mentorship initiatives, iamtheCODE works to reduce the digital divide, re-engage out-of-school youth, empower girls and women, and address the learning crisis.
+    </p>
+    <p style="font-size:17px; line-height:1.8;">
+      By emphasizing interactive, skills-based education, IamtheCODE ensures that learning leads to real understanding and application. This approach transforms education beyond mere school participation into meaningful opportunities for personal growth, innovation, and long-term success.
+    </p>
+  </div>
+
+</section>
+
+<!-- 2X2 GRID FOR FOUR SECTIONS -->
+<div class="grid-section">
+
+  <!-- reducing DIGITAL DIVIDE SECTION -->
+  <section>
+    <div class="text-content">
+  <h2>Reducing Digital Divide</h2>
+  <div class="chart-box">
+      <img src="code 1.jpg" alt="Digital divide and access to education" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  <p>
+ IamtheCODE club helps reduce the digital divide by lending free laptops and devices to students who do not have access to computers at home. Through its coding clubs and learning programs, learners are able to borrow these devices to practice programming, complete projects, and participate in digital learning activities. This initiative ensures that lack of technology does not prevent students from developing essential coding and digital skills. By providing hands-on access to tools needed for learning, IamtheCODE creates a more inclusive environment where all learners can engage in technology-based education.
+  </p>
+</div>
+
+  </section>
+ 
+  <!-- out of school youth-->
+   <section>
+  <div class="text-content">
+  <h2>Out‑of‑School Children and Youth</h2>
+  <div class="chart-box">
+      <img src="code 2.jpg" alt="Out-of-school children worldwide" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  <p>
+  Despite improved access to education, some children in nearby communities remain out of school.
+  To address this, the iamtheCODE club adviser at Culiat High School conducts outreach in the Muslim
+  compound to encourage families to enroll their children. This direct engagement helps bring
+  out-of-school youth back into formal education and supports the school’s commitment to inclusive
+  and quality education under SDG 4.
+</p>
+
+  </section>
+
+  <!--gender equality solution -->
+  <section>
+    <div class="text-content">
+  <h2>Empowering Women in Education and Technology</h2>
+  <div class="chart-box">
+      <img src="code 3.jpg" alt="Girls' access to education" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  <p>
+    IamtheCODE club addresses gender inequality by actively empowering girls and women through inclusive and supportive technology education. By creating safe learning spaces, encouraging participation in coding activities, and providing mentorship opportunities, the program helps women build confidence and develop essential digital skills. IamtheCODE also challenges traditional barriers and stereotypes that limit access to education by promoting equal opportunities for learning and leadership. Through skills development and peer support, women are empowered to participate fully in education and pursue opportunities in technology and beyond.
+  </p>
+ 
+</div>
+
+  </section>
+
+  <!-- LEARNING CRISIS STUDENTS SECTION solution -->
+  <section>
+    <div class="text-content">
+  <h2>Learning Through Collaboration </h2>
+  <div class="chart-box">
+      <img src="code 4.jpg" alt="Students not achieving minimum proficiency" style="width:100%; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.1);" />
+    </div>
+  <p>
+    IamtheCODE club addresses the learning crisis by promoting collaborative and interactive learning environments where students actively engage with one another. Through group programming activities, peer to peer teaching, and teamwork-based projects, learners are encouraged to explain concepts, share ideas, and solve problems together. This approach strengthens understanding, improves retention of knowledge, and builds confidence in applying skills. By shifting learning from passive instruction to active participation, IamtheCODE ensures that students do not simply attend sessions, but genuinely learn and develop essential problem-solving and digital skills.
+  </p>
+  
+</div>
+
+  </section>
+
+</div>
+
+<!-- INTERVIEW SECTION -->
+<section class="section-default" style="flex-direction:column; align-items:center; text-align:center;">
+
+  <!-- SECTION HEADER -->
+  <h2 style="
+      color:#b30000;
+      border-left: 6px solid #b30000;
+      padding-left: 14px;
+      font-size:30px;
+      margin-bottom:25px;
+      text-align:left;
+      width:100%;
+      max-width:1000px;
+  ">
+    Principal Interview: iamtheCODE’s Contribution to Quality Education
+  </h2>
+
+  <!-- VIDEO CONTAINER -->
+  <div style="
+      width:100%;
+      max-width:900px;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  ">
+    <!-- Replace src with your actual video file or YouTube embed -->
+    <video controls style="width:100%; height:auto;">
+      <source src="principal interview.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+<!-- REFERENCES -->
+<div class="references">
+  <h3>References</h3>
+
+  <p style="font-size:14px; color:#666;">
+    Source: United Nations & UNESCO – 
+    <a href="https://www.un.org/sustainabledevelopment/blog/2017/09/more-than-half-of-children-and-youth-worldwide-not-learning-unesco/"
+       target="_blank" style="color:#b30000;">
+      More than half of children and youth worldwide not learning – UNESCO report
+    </a>
+  </p>
+
+  <p style="font-size:14px; color:#666;">
+    Source: UNESCO – 
+    <a href="https://www.unesco.org/en/articles/startling-digital-divides-distance-learning-emerge"
+       target="_blank" style="color:#b30000;">
+      Startling digital divides in distance learning emerge
+    </a>
+  </p>
+
+  <p style="font-size:14px; color:#666;">
+    Source: UNESCO Global Education Monitoring Report – 
+    <a href="https://www.unesco.org/en/articles/251m-children-and-youth-still-out-school-despite-decades-progress-unesco-report"
+       target="_blank" style="color:#b30000;">
+      251 million children and youth still out of school worldwide
+    </a>
+  </p>
+
+  <p style="font-size:14px; color:#666;">
+    Source: UNESCO – 
+    <a href="https://www.unesco.org/en/gender-equality/education/need-know"
+       target="_blank" style="color:#b30000;">
+      Advancing education and gender equality in and through education
+    </a>
+  </p>
+
+</div>
+
+<!-- Footer -->
+  <footer>
+    <p>IamtheCODE Club | Culiat High School</p>
+  </footer>
+
+<!-- CHART SCRIPT -->
+<script>
+  const ctx = document.getElementById('literacyChart').getContext('2d');
+  const literacyChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Primary school children', 'Lower secondary adolescents'],
+      datasets: [{
+        label: 'Millions of students not achieving minimum proficiency',
+        data: [387, 230],
+        backgroundColor: ['#b30000', '#f2a1a1']
+      }]
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'Students Not Achieving Minimum Proficiency in Reading & Math'
+        },
+        legend: { display: false }
+      },
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
