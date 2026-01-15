@@ -1,40 +1,302 @@
-body {
+/* =====================================================
+   VARIABLES
+===================================================== */
+:root {
+  --red-main: #b30000;
+  --red-soft: rgba(179,0,0,0.14);
+  --red-softer: rgba(179,0,0,0.08);
+
+  --text-dark: #222;
+  --text-muted: #555;
+
+  --radius-lg: 28px;
+  --radius-md: 18px;
+}
+
+/* =====================================================
+   RESET
+===================================================== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  scroll-behavior: smooth;
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(circle at 12% 18%, var(--red-soft), transparent 45%),
+    radial-gradient(circle at 88% 78%, var(--red-softer), transparent 55%),
+    linear-gradient(180deg, #ffffff, #f2f2f2);
 }
 
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Header */
+/* =====================================================
+   HEADER
+===================================================== */
 header {
-  background: linear-gradient(90deg, #b30000, #d60000);
-  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ADDED for Home icon */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  justify-content: space-between;
+
+  background: linear-gradient(90deg, #8a0000, var(--red-main));
+  box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+  z-index: 1000;
 }
 
-.logo {
-  height: 60px;
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
-/* Home Icon (ADDED ONLY) */
-.home-link {
+.header-img { height: 65px; }
+.center-img { height: 92px; }
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-right img {
+  width: 44px;
+  margin-left: 14px;
+  transition: transform 0.25s ease;
+}
+
+.header-right img:hover {
+  transform: scale(1.12);
+}
+
+/* =====================================================
+   ABOUT – CLEAN, NO INNER BOX
+===================================================== */
+.about {
+  max-width: 1250px;
+  margin: 180px auto 140px;
+  padding: 80px;
+
+  display: flex;
+  gap: 80px;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffffff, #fafafa);
+  border-radius: var(--radius-lg);
+
+  box-shadow:
+    0 28px 70px rgba(0,0,0,0.18),
+    inset 0 0 0 5px var(--red-soft);
+}
+
+/* PROFILE AREA – FLOATING, NOT BOXED */
+.profile-card {
+  width: 320px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* IMAGE */
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 7px solid var(--red-main);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+}
+
+.name {
+  display: block;
+  font-size: 26px;
+  margin-top: 18px;
+  color: var(--red-main);
+}
+
+.role {
+  display: block;
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* TEXT */
+.about-text h2 {
+  font-size: 34px;
+  color: var(--red-main);
+  margin-bottom: 22px;
+}
+
+.about-text p {
+  font-size: 18px;
+  max-width: 900px;
+}
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+.experience {
+  padding: 140px 40px;
+}
+
+.experience h2 {
+  font-size: 32px;
+  color: var(--red-main);
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.exp-item {
+  max-width: 1200px;
+  margin: 0 auto 90px;
+  padding: 55px;
+
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.22);
+
+  transition: transform 0.45s ease;
+}
+
+.exp-item:hover {
+  transform: translateY(-12px);
+}
+
+.exp-item img {
+  width: 360px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.25);
+}
+
+.exp-text p {
+  font-size: 17px;
+  color: var(--text-muted);
+}
+
+/* =====================================================
+   ACCOMPLISHMENTS
+===================================================== */
+.accomplishments {
+  padding: 140px 40px;
+}
+
+.accomplishments h2 {
+  font-size: 32px;
+  color: var(--red-main);
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  gap: 55px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 380px;
+  min-height: 440px;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+
+  box-shadow: 0 22px 50px rgba(0,0,0,0.2);
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+.gallery-item:nth-child(2) { animation-delay: 1.5s; }
+.gallery-item:nth-child(3) { animation-delay: 3s; }
+
+@keyframes cardFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+.gallery-item:hover {
+  transform: translateY(-22px);
+  box-shadow: 0 38px 90px rgba(179,0,0,0.35);
+}
+
+.gallery-item img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  padding: 26px;
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.site-footer {
+  padding: 36px;
+  background: linear-gradient(90deg, #8a0000, var(--red-main));
+  color: white;
+  text-align: center;
+  box-shadow: 0 -10px 26px rgba(0,0,0,0.28);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .header-center { display: none; }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    margin: 150px 20px 110px;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .exp-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-item {
+    width: 94%;
+  }
+}.home-link {
   display: flex;
   align-items: center;
 }
@@ -341,4 +603,5 @@ header {
 .profile-icon {
   width: 50px;    /* was 36px */
   height: 50px;
+
 }
